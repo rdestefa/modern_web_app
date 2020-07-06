@@ -1,0 +1,133 @@
+<!-- Ryan DeStefano         -->
+<!-- June 16, 2020          -->
+<!-- Modern Web Development -->
+<!-- Darius Main Page       -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Feature 2 - Darius Main Page</title>
+        <link href="darius.css" type="text/css" rel="stylesheet"/>
+    </head>
+    <body>
+        <h1 style="text-align: center">Darius - The Hand of Noxus</h1>
+        
+        <!-- Embedded YouTube Video Using iframe -->
+        <p style="text-align: center">
+            <iframe width="792" height="446" src="https://www.youtube.com/embed/0M15wr-5O18" frameborder="0" allowfullscreen></iframe>
+        </p>
+        <hr class="description">
+        
+        <!-- Champion Stats -->
+        <div class="darius_stats">
+            <h2><b>Champion Stats</b></h2>
+            <p><b>Role: </b>Juggernaut</p>
+            <p><b>Damage: </b>Physical</p>
+            <p><b>Range: </b>Melee</p>
+            <p><b>Resource: </b>Mana</p>
+            <p><b>Difficulty: </b>Easy</p>
+            <p><b>Base stats:</b></p>
+            <ul>
+                <li><b>Health: </b>582 - 2282 (<i>1 - 18</i>)</li>
+                <li><b>Health Regen: </b>10 - 26.15 (<i>1 - 18</i>)</li>
+                <li><b>Armor: </b>39 - 107 (<i>1 - 18</i>)</li>
+                <li><b>Magic Resist: </b>32.1 - 53.35 (<i>1 - 18</i>)</li>
+                <li><b>Attack Damage: </b>64 - 149 (<i>1 - 18</i>)</li>
+                <li><b>Attack Speed: </b>0.625 [+0 - 17%] (<i>1 - 18</i>)</li>
+                <li><b>Movement Speed: </b>340</li>
+            </ul>
+        </div>
+        <hr class="description">
+        
+        <!-- Abilities -->
+        <div class="darius_abilities">
+            <h2><b>Abilities</b></h2>
+            
+            <h3><b>Hemorrhage (Passive)</b></h3>
+            <p>When Darius deals damage to enemies, he causes them to bleed for periodic <i>physical</i> damage. This effect stacks up to 5 times. When 5 stacks have been applied to an enemy, or when Darius kills an enemy with Noxian Guillotine, he gains Noxian Might for 5 seconds.</p>
+            
+            <p><b>Noxian Might: </b>Darius gains a massive amount of bonus attack damage and instalty applies 5 stacks of Hemorrhage to enemies with his attacks.</p>
+            
+            <h3><b>Decimate (Q)</b></h3>
+            <p>After a 0.75 second delay, Darius swings his axe around himself, dealing <i>physical</i> damage to nearby enemies. This damage is reduced for enemies hit by the handle of the axe. Darius heals for a percentage of his missing health per enemy hit by the blade.</p>
+            
+            <h3><b>Crippling Strike (W)</b></h3>
+            <p>Darius' next basic attack deals bonus <i>physical</i> damage and greatly slows his target for 1 second. If Crippling Strike kills its target, it refunds its mana cost and half of its cooldown.</p>
+            
+            <h3><b>Apprehend (E)</b></h3>
+            <p><b>Passive: </b>Darius gains armor penetration, allowing his <i>physical</i> attacks to ignore a percentage of his target's armor.</p>
+            <p><b>Active: </b>Darius pulls in all enemies in front of him with his axe.</p>
+            
+            <h3><b>Noxian Guillotine (R)</b></h3>
+            <p>Darius leaps toward an enemy in an attempt to execute them, dealing <i>true</i> damage that increases with each stack of Hemorrhage on the target. If the target is killed, Darius instantly gains Noxian Might and the ability's cooldown is refunded for 20 seconds. At level 16, the cooldown is refunded completely.</p>
+        </div>
+        <hr class="description">
+        
+        <!-- Skins -->
+        <h2 style="text-align: center"><b>Skins</b></h2>
+        <div class="darius_skins">   
+            <div>
+                <h3>Default Darius</h3>
+                <img class="default_img" alt="Default Darius" src="images/basic_darius.jpg"/>
+            </div>
+            <div>
+                <h3>Academy Darius</h3>
+                <img class="academy_img" alt="Academy Darius" src="images/academy_darius.jpg"/>
+            </div> 
+            <div>
+                <h3>Bioforge Darius</h3>
+                <img class="bioforge_img" alt="Bioforge Darius" src="images/bioforge_darius.jpg"/>
+            </div>
+            <div>
+                <h3>Dreadnova Darius</h3>
+                <img class="dreadnova_img" alt="Dreadnova Darius" src="images/dreadnova_darius.jpg"/>
+            </div>
+            <div>
+                <h3>Dunkmaster Darius</h3>
+                <img class="dunkmaster_img" alt="Dunkmaster Darius" src="images/dunkmaster_darius.jpg"/>
+            </div>
+            <div>
+                <h3>God-King Darius</h3>
+                <img class="god_king_img" alt="God-King Darius" src="images/god_king_darius.jpg"/>
+            </div>
+            <div>
+                <h3>High Noon Darius</h3>
+                <img class="high_noon_img" alt="High Noon Darius" src="images/high_noon_darius.jpg"/>
+            </div>
+            <div>
+                <h3>Lord Darius</h3>
+                <img class="lord_img" alt="Lord Darius" src="images/lord_darius.jpg"/>
+            </div>
+            <div>
+                <h3>Woad King Darius</h3>
+                <img class="woad_king_img" alt="Woad King Darius" src="images/woad_king_darius.jpg"/>
+            </div>
+        </div>
+        <hr>
+        
+        <!-- Favorite Skin Drop Down Menu -->
+        <div class="fav_skin">
+            <h2>What's Your Favorite Skin?</h2>
+        
+            <select name="skins">
+                <option value="default">Default Darius</option>
+                <option value="academy">Academy Darius</option>
+                <option value="bioforge">Bioforge Darius</option>
+                <option value="dreadnova">Dreadnova Darius</option>
+                <option value="dunkmaster">Dunkmaster Darius</option>
+                <option value="god_king">God-King Darius</option>
+                <option value="high_noon">High Noon Darius</option>
+                <option value="lord">Lord Darius</option>
+                <option value="woad_king">Woad King Darius</option>
+            </select>
+        </div>
+        <hr>
+        
+        <!-- Navigation -->
+        <p class="navigation_home" style="text-align: center"><a href="../index.html">Home</a></p>
+        <p class="navigation" style="text-align: center">
+            <a href="../garen/index.html">Garen</a>
+            <a href="../rek_sai/index.html">Rek'sai</a>
+        </p>
+    </body>
+</html>

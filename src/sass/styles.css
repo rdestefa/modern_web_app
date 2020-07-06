@@ -1,0 +1,19 @@
+input {
+    text-align: center;
+    border: 1px solid #eee;
+}
+
+button {
+    text-align: center;
+    border: 0;
+    background: #eee; border-radius: 3px;
+}
+
+div {
+    margin
+    height: 10px;
+}
+
+level_counter {
+    height: 20px;
+}

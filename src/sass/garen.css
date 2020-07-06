@@ -1,0 +1,162 @@
+/* Ryan DeStefano         */
+/* June 16, 2020          */
+/* Modern Web Development */
+/* Garen CSS Page         */
+
+/* Importing Fonts From Google */
+@import url(http://fonts.googleapis.com/css2?family=Metal+Mania&family=Quicksand&family=Alfa+Slab+One);
+
+h1 {
+    text-align: center;
+    font-family: "Metal Mania", cursive;
+    font-size: 30pt;
+    color: black;
+}
+
+h2 {
+    font-family: "Alfa Slab One";
+}
+
+h3 {
+    font-family: "Alfa Slab One";
+}
+
+p {
+    font-family: Quicksand;
+}
+
+img {
+    padding: 20px;
+}
+
+.description {
+    margin: 0;
+    padding: 10px;
+    background-image: linear-gradient(black, black);
+}
+
+.garen_stats {
+    background-image: linear-gradient(blue, royalblue);
+    padding: 10px;
+}
+
+.garen_abilities {
+    background-image: linear-gradient(dimgrey, grey);
+    padding: 10px;
+}
+
+.garen_skins {
+    text-align: center;
+    max-width: 1500px;
+    margin: 30px auto;
+    padding: 0px;
+    width: 100%;
+    display: grid;
+    grid-auto-rows: 280px;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-gap: 1em;
+}
+
+/* Creating Borders Around Images */
+.default_img {
+    background-color: dimgrey;
+}
+
+.commando_img {
+    background-color: yellowgreen;
+}
+
+.demacia_vice_img {
+    background-color: hotpink;
+}
+
+.dreadknight_img {
+    background-color: skyblue;
+}
+
+.god_king_img {
+    background-color: dodgerblue;
+}
+
+.mecha_kingdoms_img {
+    background-color: royalblue;
+}
+
+.rogue_admiral_img {
+    background-color: sandybrown;
+}
+
+.rugged_img {
+    background-color: darkseagreen;
+}
+
+.steel_legion_img {
+    background-color: powderblue;
+}
+
+/* Making Select Bar More Visually Appealing */
+select {
+    font-family: Quicksand;
+    font-size: 14pt;
+    position: relative
+}
+
+option {
+    font-family: Quicksand;
+}
+
+/* Creating a Flex Navigation Bar */
+.navigation {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 0;
+    background: grey;
+}
+
+.navigation_home {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 0;
+    background: royalblue;
+}
+
+.navigation a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: white;
+}
+
+.navigation_home a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: white;
+}
+
+.navigation a:hover {
+    background-color: dimgrey;
+}
+
+.navigation_home a:hover {
+    background-color: cornflowerblue;
+}
+
+/* When the Window is Less Than 600px wide, Stack the Bars */
+@media all and (max-width: 600px) {
+    .navigation {
+        flex-flow: column wrap;
+        padding: 0;
+    }
+    .navigation a {
+        text-align: center;
+        padding: 10px;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    .navigation li:last-of-type a {
+        border-bottom: none;
+    }
+}
