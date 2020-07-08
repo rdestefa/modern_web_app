@@ -1,11 +1,11 @@
-/* Model and helped methods for the Weapons parse object */
+/* Model and helper methods for the Weapons parse object */
 
-class ArmorModel { ////////////////////
+class ArmorModel {
     constructor(Parse) {
         this.Parse = Parse;
         this.data = {};
         this.collection = [];
-        this.name = 'Armor'; ///////////////
+        this.name = 'Armor';
         this.fields = [
             'name',
             'health',
@@ -44,4 +44,4 @@ class ArmorModel { ////////////////////
 
 angular
     .module('common')
-    .service('ArmorModel', ArmorModel); ////////////////////////////
+    .service('ArmorModel', ArmorModel);

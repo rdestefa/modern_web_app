@@ -1,5 +1,5 @@
 angular
     .module('components', [
-        'components.home',
-        'components.config'
+        'components.weapons',
+        'components.armor'
     ]);

@@ -1,4 +1,4 @@
-/* Model and helped methods for the Weapons parse object */
+/* Model and helper methods for the Weapons parse object */
 
 class WeaponsModel {
     constructor(Parse) {
@@ -39,7 +39,17 @@ class WeaponsModel {
             .catch(error => Promise.reject(error));
     }
     
-    //getAllWeapons()
+    getAllWeapons() {
+        return new this.Parse.Query(this.New())
+            .find(results => {
+                results.forEach(result =>
+                    this.Parse.defineAttributes(result, this.fields)
+                );
+                this.data = results;
+                return Promise.resolve(results);
+            })
+            .catch(error => Promise.reject(error));
+    }
 }
 
 angular

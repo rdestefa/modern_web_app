@@ -4,7 +4,7 @@ function init($rootScope, $uiRouter, $mdSidenav, $timeout, $log) {
     
     $rootScope.isEmpty = isEmpty;
 
-// Utility function for checking if JS object is empty
+    // Utility function for checking if JS object is empty
     function isEmpty(obj) {
         for (var key in obj) {
             if (obj.hasOwnProperty(key)) {
