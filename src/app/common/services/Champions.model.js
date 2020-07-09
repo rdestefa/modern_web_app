@@ -1,19 +1,25 @@
-/* Model and helper methods for the Armor parse object */
+/* Model and helper methods for the Champions parse object */
 
-class ArmorModel {
+class ChampionsModel {
     constructor(Parse) {
         this.Parse = Parse;
         this.data = {};
         this.collection = [];
-        this.name = 'Armor';
+        this.name = 'Champions';
         this.fields = [
             'name',
             'health',
+            'healthPerLv',
             'healthRegen',
+            'healthRegenPerLv',
             'armor',
+            'armorPerLv',
             'magicResist',
+            'magicResistPerLv',
             'attackDamage',
-            'attackSpeed'
+            'attackDamagePerLv',
+            'attackSpeed',
+            'attackSpeedPerLv'
         ];
     }
     
@@ -39,7 +45,7 @@ class ArmorModel {
             .catch(error => Promise.reject(error));
     }
     
-    getAllArmor() {
+    getAllChampions() {
         return new this.Parse.Query(this.New())
             .find(results => {
                 results.forEach(result =>
@@ -54,4 +60,4 @@ class ArmorModel {
 
 angular
     .module('common')
-    .service('ArmorModel', ArmorModel);
+    .service('ChampionsModel', ChampionsModel);

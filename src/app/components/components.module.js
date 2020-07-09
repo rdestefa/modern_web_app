@@ -1,5 +1,6 @@
 angular
     .module('components', [
         'components.weapons',
-        'components.armor'
+        'components.armor',
+        'components.champions'
     ]);

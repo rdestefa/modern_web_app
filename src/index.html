@@ -5,15 +5,18 @@
         <title>League of Legends App</title>
         <!-- Angular Material CSS now available via Google CDN; version 1.1.23 used here -->
         <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.23/angular-material.min.css">
-        <link href="./sass/styles.css" rel="stylesheet"/>
+        <link id="bundlecss" rel="stylesheet" href="css/main-1594261927272.min.css">
     </head>
 
     <body>
-
         <h1>Basic Build Simulator</h1>
         
-        <a ui-sref="root">Root</a>
         <a ui-sref="app">App</a>
+        <a ui-sref="">Weapons</a>
+        
+        <root>
+            <span class="loader">Loading Page...</span>
+        </root>
         
         <!-- Levels Component -->
         <!--<h3>Level (1-18)</h3>
@@ -28,12 +31,11 @@
         </div>
         -->
 
-        <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular.min.js"></script>
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular-animate.min.js"></script>
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular-aria.min.js"></script>
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular-messages.min.js"></script> -->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular-messages.min.js"></script>
         <!-- Angular Material Javascript now available via Google CDN; version 1.1.23 used here -->
-        <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.23/angular-material.min.js"></script>
-        <script type="text/javascript" src="app.js"></script>-->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.23/angular-material.min.js"></script>
     </body>
 </html>

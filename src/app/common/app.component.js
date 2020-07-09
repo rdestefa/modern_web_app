@@ -1,5 +1,5 @@
 var app = {
-    templateUrl: './app.html'
+    templateUrl: './app.html',
     controller: 'AppController'
 };
 
@@ -10,6 +10,7 @@ angular
     $stateProvider
         .state('app', {
             url: '/',
-            component: 'app'
+            component: 'app',
+            //redirectTo: 'weapons'
     })
 });
