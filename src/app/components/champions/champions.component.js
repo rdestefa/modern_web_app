@@ -3,6 +3,7 @@ var champions = {
     controller: 'ChampionsController',
     bindings: {
         champions: '<',
+        newChampion: '<',
         level: '='
     }
 };
@@ -20,6 +21,9 @@ angular
                     champions: function(ChampionsModel) {
                         console.log('Load Champions');
                         return ChampionsModel.getAllChampions();
+                    },
+                    newChampion: function(ChampionsModel) {
+                        return ChampionsModel.New();
                     }
                 }
             })

@@ -19,8 +19,10 @@
         <p>Attack Damage: <input id="attack_damage_field" type="number" ng-model=$ctrl.weapons[$ctrl.weaponSelected].attackDamage /></p>
         <p>Attack Speed: <input id="attack_speed_field" type="number" ng-model=$ctrl.weapons[$ctrl.weaponSelected].attackSpeed /></p>
     
+        <!-- Refresh data -->
         <button type="button" id="load_data" ng-click="$ctrl.loadData()">Load Data</button>
         
+        <!-- Save new data to Parse database -->
         <button type="button" id="save_data" ng-click="$ctrl.saveData($ctrl.weapons[$ctrl.weaponSelected]);">Save Data</button>
     </form>
 </div>

@@ -38,26 +38,24 @@ function ChampionsController() {
         return ctrl.level;
     };
     
-    ctrl.newChampion = function() {
-        var newData = {
-            "name" : document.getElementById("new_name").value,
-            "health" : document.getElementById("new_hp").value,
-            "healthPerLv" : document.getElementById("new_hp_lv").value,
-            "healthRegen" : document.getElementById("new_hp_regen").value,
-            "healthRegenPerLv" : document.getElementById("new_hp_regen_lv").value,
-            "armor" : document.getElementById("new_armor").value,
-            "armorPerLv" : document.getElementById("new_armor_lv").value,
-            "magicResist" : document.getElementById("new_mr").value,
-            "magicResistPerLv" : document.getElementById("new_mr_lv").value,
-            "attackDamage" : document.getElementById("new_ad").value,
-            "attackDamagePerLv" : document.getElementById("new_ad_lv").value,
-            "attackSpeed" : document.getElementById("new_as").value,
-            "attackSpeedPerLv" : document.getElementById("new_as_lv").value
-        }
+    // Create new champion in Parse database
+    ctrl.newChamp = function() {
+        ctrl.newChampion.set('name', document.getElementById("new_name").value);
+        ctrl.newChampion.set('health', Number(document.getElementById("new_hp").value));
+        ctrl.newChampion.set('healthPerLv', Number(document.getElementById("new_hp_lv").value));
+        ctrl.newChampion.set('healthRegen', Number(document.getElementById("new_hp_regen").value));
+        ctrl.newChampion.set('healthRegenPerLv', Number(document.getElementById("new_hp_regen_lv").value));
+        ctrl.newChampion.set('armor', Number(document.getElementById("new_armor").value));
+        ctrl.newChampion.set('armorPerLv', Number(document.getElementById("new_armor_lv").value));
+        ctrl.newChampion.set('magicResist', Number(document.getElementById("new_mr").value));
+        ctrl.newChampion.set('magicResistPerLv', Number(document.getElementById("new_mr_lv").value));
+        ctrl.newChampion.set('attackDamage', Number(document.getElementById("new_ad").value));
+        ctrl.newChampion.set('attackDamagePerLv', Number(document.getElementById("new_ad_lv").value));
+        ctrl.newChampion.set('attackSpeed', Number(document.getElementById("new_as").value));
+        ctrl.newChampion.set('attackSpeedPerLv', Number(document.getElementById("new_as_lv").value));
         
-        console.log(newData);
-        
-        champions.save(newData);
+        ctrl.newChampion.save()
+        console.log('Saved ' + ctrl.newChampion.name)
     }
 }
 

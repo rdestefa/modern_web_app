@@ -6,6 +6,7 @@ function WeaponsController() {
         console.log('Weapons in Controller: ', ctrl.weapons);
     }
     
+    // Save new data to Parse database
     ctrl.saveData = function (weapons) {
         console.log(weapons);
         return weapons.save().then(function(result) {
@@ -13,6 +14,7 @@ function WeaponsController() {
         });
     }
     
+    // Refresh data
     ctrl.loadData = function() {
         ctrl.weaponSelected = document.getElementById("weapon").selectedIndex;
         console.log(ctrl.weaponSelected);
