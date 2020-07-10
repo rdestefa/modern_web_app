@@ -2,19 +2,22 @@ function WeaponsController() {
     const ctrl = this;
     
     ctrl.$onInit = function () {
+        ctrl.weaponSelected = 0;
         console.log('Weapons in Controller: ', ctrl.weapons);
     }
     
-    ctrl.refreshData = function() {
-        ctrl.healthValue = ctrl.weapons.getById(document.getElementById("weapon").value).health;
-        ctrl.healthRegenValue = ctrl.weapons.getById(document.getElementById("weapon").value).healthRegen;
-        ctrl.armorValue = ctrl.weapons.getById(document.getElementById("weapon").value).armor;
-        ctrl.magicResistValue = ctrl.weapons.getById(document.getElementById("weapon").value).magicResist;
-        ctrl.attackDamageValue = ctrl.weapons.getById(document.getElementById("weapon").value).attackDamage;
-        ctrl.attackSpeedValue = ctrl.weapons.getById(document.getElementById("weapon").value).attackSpeed;
+    ctrl.saveData = function (weapons) {
+        console.log(weapons);
+        return weapons.save().then(function(result) {
+            console.log(result);
+        });
     }
-
-    ctrl.refreshData;
+    
+    ctrl.loadData = function() {
+        ctrl.weaponSelected = document.getElementById("weapon").selectedIndex;
+        console.log(ctrl.weaponSelected);
+        return ctrl.weaponSelected;
+    }
 }
 
 angular

@@ -10,7 +10,6 @@ angular
     $stateProvider
         .state('app', {
             url: '/',
-            component: 'app',
-            //redirectTo: 'weapons'
+            component: 'app'
     })
 });

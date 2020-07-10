@@ -17,7 +17,7 @@ angular
                 component: 'champions',
                 parent: 'app',
                 resolve: {
-                    weapons: function(ChampionsModel) {
+                    champions: function(ChampionsModel) {
                         console.log('Load Champions');
                         return ChampionsModel.getAllChampions();
                     }

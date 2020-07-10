@@ -1,4 +1,4 @@
-/*input {
+input {
     text-align: center;
     border: 1px solid #eee;
 }
@@ -10,10 +10,9 @@ button {
 }
 
 div {
-    margin
     height: 10px;
 }
 
 level_counter {
     height: 20px;
-}*/=
+}

@@ -2,23 +2,27 @@
     <h1>Armor List</h1>
     
     <form>
-        <label>
-            <select id="armor">
-                <option disabled slected value="0">-Choose Armor-</option>
-                <option value="hviuUD6v0D">Dead Man's Plate</option>
-                <option value="lz8Fad9xXZ">Sunfire Cape</option>
-                <option value="zL1DYP0kdP">Spirit Visage</option>
-                <option value="SZ5K0l0bca">Warmog's Armor</option>
-            </select>
-        </label>
+        <!-- Drop down using ng-repeat -->
+        <p>Armor: 
+            <label>
+                <select id="armor">
+                    <option ng-repeat="armor in $ctrl.armor track by $index" value="$ctrl.armorSelected = $index">{{armor.name}}</option>
+                </select>
+            </label>
+        </p>
+     
+        <!-- Display stats -->
+        <p>Health: <input id="health_field" type="number" ng-model=$ctrl.armor[$ctrl.armorSelected].health /></p>
+        <p>Health Regen: <input id="health_regen_field" type="number" ng-model=$ctrl.armor[$ctrl.armorSelected].healthRegen /></p>
+        <p>Armor: <input id="armor_field" type="number" ng-model=$ctrl.armor[$ctrl.armorSelected].armor /></p>
+        <p>Magic Resist: <input id="magic_resist_field" type="number" ng-model=$ctrl.armor[$ctrl.armorSelected].magicResist /></p>
+        <p>Attack Damage: <input id="attack_damage_field" type="number" ng-model=$ctrl.armor[$ctrl.armorSelected].attackDamage /></p>
+        <p>Attack Speed: <input id="attack_speed_field" type="number" ng-model=$ctrl.armor[$ctrl.armorSelected].attackSpeed /></p>
+        
+        <!-- Update data fields -->
+        <button type="button" id="load_data" ng-click="$ctrl.loadData()">Load Data</button>
+        
+        <!-- Save new data to Parse database -->
+        <button type="button" id="save_data" ng-click="$ctrl.saveData($ctrl.armor[$ctrl.armorSelected], document.getElementById('armor').value);">Save Data</button>
     </form>
-    
-    <p>Health: <input id="health_field" type="text" ng-model=$ctrl.healthValue /><br></p>
-    <p>Health Regen: <input id="health_regen_field" type="text" ng-model=$ctrl.healthRegenValue /></p>
-    <p>Armor: <input id="armor_field" type="text" ng-model=$ctrl.armorValue /></p>
-    <p>Magic Resist: <input id="armor_field" type="text" ng-model=$ctrl.magicResistValue /></p>
-    <p>Attack Damage: <input id="attack_damage_field" type="text" ng-model=$ctrl.attackDamageValue /></p>
-    <p>Attack Speed: <input id="attack_speed_field" type="text" ng-model=$ctrl.attackSpeedValue /></p>
-    
-    <button type="button" id="load_data" ng-click="$ctrl.refreshData();"> Load Data</button>
 </div>

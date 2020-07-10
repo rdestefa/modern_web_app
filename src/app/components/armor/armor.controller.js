@@ -2,19 +2,25 @@ function ArmorController() {
     const ctrl = this;
     
     ctrl.$onInit = function () {
+        ctrl.armorSelected = 0;
         console.log('Armor in Controller: ', ctrl.armor);
     }
     
-    ctrl.refreshData = function() {
-        ctrl.healthValue = ctrl.armor.getById(document.getElementById("armor").value).health;
-        ctrl.healthRegenValue = ctrl.armor.getById(document.getElementById("armor").value).healthRegen;
-        ctrl.armorValue = ctrl.armor.getById(document.getElementById("armor").value).armor;
-        ctrl.magicResistValue = ctrl.armor.getById(document.getElementById("armor").value).magicResist;
-        ctrl.attackDamageValue = ctrl.armor.getById(document.getElementById("armor").value).attackDamage;
-        ctrl.attackSpeedValue = ctrl.armor.getById(document.getElementById("armor").value).attackSpeed;
+    // Save data to Parse database
+    ctrl.saveData = function (armor, index) {
+        console.log(armor);
+        console.log(index);
+        return armor.save().then(function(result) {
+            console.log(result);
+        });
     }
-
-    ctrl.refreshData;
+    
+    // Update selected value
+    ctrl.loadData = function() {
+        ctrl.armorSelected = document.getElementById("armor").selectedIndex;
+        console.log(ctrl.armorSelected);
+        return ctrl.armorSelected;
+    }
 }
 
 angular

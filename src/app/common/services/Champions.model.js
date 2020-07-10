@@ -23,17 +23,19 @@ class ChampionsModel {
         ];
     }
     
+    // Creating new object
     New(obj) {
         if (angular.isUndefined(obj)) {
             const parseObject = new this.Parse.Object(this.name);
             this.Parse.defineAttributes(parseObject, this.fields);
-            return ParseObject;
+            return parseObject;
         } else {
             this.Parse.defineAttributes(obj, this.fields);
             return obj;
         }
     }
     
+    // Retrieving an object by its ID
     getById(id) {
         return new this.Parse.Query(this.New())
             .get(id)
@@ -45,6 +47,7 @@ class ChampionsModel {
             .catch(error => Promise.reject(error));
     }
     
+    // Gettings all Champion objects
     getAllChampions() {
         return new this.Parse.Query(this.New())
             .find(results => {
@@ -59,5 +62,5 @@ class ChampionsModel {
 }
 
 angular
-    .module('common')
+    .module('components.champions')
     .service('ChampionsModel', ChampionsModel);

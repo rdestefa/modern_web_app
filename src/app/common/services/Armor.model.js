@@ -17,17 +17,19 @@ class ArmorModel {
         ];
     }
     
+    // Creating a new object
     New(obj) {
         if (angular.isUndefined(obj)) {
             const parseObject = new this.Parse.Object(this.name);
             this.Parse.defineAttributes(parseObject, this.fields);
-            return ParseObject;
+            return parseObject;
         } else {
             this.Parse.defineAttributes(obj, this.fields);
             return obj;
         }
     }
     
+    // Retrieving an object based on its ID
     getById(id) {
         return new this.Parse.Query(this.New())
             .get(id)
@@ -39,6 +41,7 @@ class ArmorModel {
             .catch(error => Promise.reject(error));
     }
     
+    // Getting all Armor objects
     getAllArmor() {
         return new this.Parse.Query(this.New())
             .find(results => {
