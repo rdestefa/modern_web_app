@@ -17,14 +17,18 @@ function AuthService(Parse) {
   }
     
   this.login = function (user) {
+    console.log("user in auth service", user)
     return auth
       .logIn(user.email, user.password)
       .then(storeAuthData);
   };
     
-  this.register = function (user) {    
+  this.register = function (user) {
+    auth.set("username", user.email);
+    auth.set("password", user.password);
+    auth.set("email", user.email);
     return auth
-      .signUp(user.email, user.password)
+      .signUp()
       .then(storeAuthData);
   };
     
