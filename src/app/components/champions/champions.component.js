@@ -15,6 +15,9 @@ angular
         $stateProvider
             .state('champions', {
                 url: 'champions',
+                data: {
+                    requiredAuth: true
+                },
                 component: 'champions',
                 parent: 'app',
                 resolve: {

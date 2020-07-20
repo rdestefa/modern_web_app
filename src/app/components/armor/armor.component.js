@@ -13,6 +13,9 @@ angular
         $stateProvider
             .state('armor', {
                 url: 'armor',
+                data: {
+                    requiredAuth: true
+                },
                 component: 'armor',
                 parent: 'app',
                 resolve: {

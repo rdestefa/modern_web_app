@@ -13,6 +13,9 @@ angular
         $stateProvider
             .state('weapons', {
                 url: 'weapons',
+                data: {
+                    requiredAuth: true
+                },
                 component: 'weapons',
                 parent: 'app',
                 resolve: {

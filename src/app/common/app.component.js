@@ -9,7 +9,10 @@ angular
     .config(function ($stateProvider) {
     $stateProvider
         .state('app', {
-            url: '/',
+            url: '/app',
+            data: {
+                requiredAuth: true
+            },
             component: 'app'
     })
 });

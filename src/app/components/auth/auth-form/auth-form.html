@@ -1,0 +1,28 @@
+<form name="authForm" novalidate ng-submit="$ctrl.submitForm();">
+    <label>
+        <input
+            type="email"
+            name="email"
+            required="required"
+            placeholder="Email"
+            ng-model="$ctrl.user.email">
+    </label>
+    <label>
+        <input
+            type="password"
+            name="password"
+            required="required"
+            placeholder="Password"
+            ng-model="$ctrl.user.password">
+    </label>
+    <br />
+    <div class="auth-submit">
+        <button type="submit" ng-disabled="authForm.$invalid">
+            {{ $ctrl.button }}
+        </button>
+    </div>
+    <br />
+    <div ng-if="$ctrl.message">
+        {{ $ctrl.message }}
+    </div>
+</form>
