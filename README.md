@@ -4,6 +4,8 @@ This web app is a basic League of Legends 'simulator', which allows the user to 
 
 In addtion, the user might also choose to modify one or more values and save their modifications to an external Parse database.
 
+The user will first need to register an account and login before being able to access the app.
+
 The website was built with AngularJS, Gulp, and Parse free software packages.
 
 ---
