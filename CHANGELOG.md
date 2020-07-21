@@ -1,4 +1,25 @@
-#### [ 0.2.0 ]
+## [ 0.3.0 ] 
+
+v0.3 includes authentication for a user, and access control adjustments
+
+### Bug Fixes
+
+- No bug fixes
+
+### Contributors
+
+Ryan Destefano, Robert Koniuta
+
+### Features
+
+- Adjustment so that navigation is restricted without authenication
+- Protected routes redirect to auth component
+- User cannot route to auth without being logged in
+
+Contributors
+Ryan Destefano, Robert Koniuta
+
+## [ 0.2.0 ]
 
 v0.2 includes breaking the single file from Feature 3 into component architecture and building with gulpjs.
 
