@@ -4,16 +4,17 @@ function RegisterController(AuthService, $state) {
     ctrl.error = null;
     ctrl.user = {
       email: '',
-      password: ''
+      password: '',
+      username: ''
     };
   };
+    
+  // Create user then send them to login
   ctrl.createUser = function (event) {
-    return AuthService
+    AuthService
       .register(event.user)
       .then(function () {
-        $state.go('app');
-      }, function (reason) {
-        ctrl.error = reason.message;
+        $state.go('auth');
       });
   };
 }

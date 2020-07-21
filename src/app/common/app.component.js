@@ -9,10 +9,8 @@ angular
     .config(function ($stateProvider) {
     $stateProvider
         .state('app', {
-            url: '/app',
-            data: {
-                requiredAuth: true
-            },
+            redirectTo: 'armor',
+            url: '/',
             component: 'app'
     })
 });

@@ -1,22 +1,26 @@
 function LoginController(AuthService, $state) {
   var ctrl = this;
+    
+  // Initialize data
   ctrl.$onInit = function () {
     ctrl.error = null;
     ctrl.user = {
       email: '',
-      password: ''
+      password: '',
+      username: ''
     };
   };
+    
+  // Login user then send them to the app
   ctrl.loginUser = function (event) {
     console.log(event)
     console.log(event.user)
 
-    return AuthService
+    AuthService
       .login(event.user)
       .then(function () {
+        console.log('we here');
         $state.go('app');
-      }, function (reason) {
-        ctrl.error = reason.message;
       });
   };
 }

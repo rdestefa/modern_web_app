@@ -5,6 +5,8 @@ function AuthFormController() {
       ctrl.user = angular.copy(ctrl.user);
     }
   };
+    
+  // Create user on button press
   ctrl.submitForm = function () {
     ctrl.onSubmit({
       $event: {

@@ -8,14 +8,14 @@ angular
   .component('login', login)
   .config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider
-      .state('auth', {              // Why auth AND auth.login?
+      .state('auth', {
         redirectTo: 'auth.login',
-        url: '/auth', /// auth?
+        url: '/auth',
         template: '<div ui-view></div>'
       })
       .state('auth.login', {
-        url: '/login', /// login?
-        component: 'login'
+        url: '/login',
+        component: 'login',
       });
     $urlRouterProvider.otherwise('/auth/login');
   });
