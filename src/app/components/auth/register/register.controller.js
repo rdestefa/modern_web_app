@@ -14,7 +14,7 @@ function RegisterController(AuthService, $state) {
     AuthService
       .register(event.user)
       .then(function () {
-        $state.go('auth');
+        $state.go('auth.login');
       });
   };
 }
