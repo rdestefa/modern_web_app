@@ -7,7 +7,7 @@
         <p><p id="category"> Armor: </p>
             <div id="selector">
             <label>
-                <select>
+                <select id="armor">
                     <option ng-repeat="armor in $ctrl.armor track by $index" value="$ctrl.armorSelected = $index">{{armor.name}}</option>
                 </select>
             </label>
@@ -29,6 +29,6 @@
         
         <!-- Save new data to Parse database -->
         <button type="button" id="save_data" ng-click="$ctrl.saveData($ctrl.armor[$ctrl.armorSelected], document.getElementById('armor').value);">Save Data</button>
-    </div>
+        </div>
     </form>
 </div>
