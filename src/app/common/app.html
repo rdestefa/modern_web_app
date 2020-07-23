@@ -1,6 +1,10 @@
+<head>
+    <link href="../sass/styles.css" type="text/css" rel="stylesheet" />  
+</head>
+
 <div class="root">
     <div class="app">
-        <form ng-submit="$ctrl.logout()">
+        <form ng-submit="$ctrl.logout()" id="logoutbutton">
             <button value="logout" name="logout">Log Out</button>
         </form>
         <div ui-view></div>  

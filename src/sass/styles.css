@@ -16,3 +16,70 @@ div {
 level_counter {
     height: 20px;
 }
+
+/*pertains to each of "champions, weapons, armor fields under basic build simulator*/
+#linkbullet {
+  margin: auto;
+  text-align: center;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+}
+
+/* pertains to "BASIC BUILD SIMULATOR" at the top of the login/reg screens*/
+#headline_title {
+    margin: auto;
+    text-align: center;
+    color: red;
+    font-weight: bold;
+}
+
+/* pertains to each of "email", "username", and "password" fields for the login*/
+#loginfield {
+  margin: auto;
+  align-content: center;
+  width: 50%;
+  border: 3px solid blue;
+  padding: 10px;  
+}
+
+#loginbutton {
+  margin: auto;
+  align-content: center;
+  width: 50%;
+  border: 3px solid purple;
+  padding: 5px;  
+}
+
+#logoutbutton {
+  margin: auto;
+  align-content: center;
+  width: 50%;
+  border: 3px solid purple;
+  padding: 5px;  
+}
+
+#inputbox {
+  margin: auto;
+  align-content: center;
+  width: 50%;
+  border: 3px solid black;
+  padding: 5px;  
+}
+
+#category {
+  display: inline;
+  margin: auto;
+  align-content: center;
+  width: 50%;
+  border: 3px solid orange;
+  padding: 5px;  
+}
+
+#selector {
+  margin: auto;
+  align-content: center;
+  text-align: center;
+  color: yellow;
+  font-weight: bold;
+}

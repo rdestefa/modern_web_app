@@ -1,9 +1,14 @@
-<div class="root">
-    <header>
-        <p><a ui-sref="champions">Champions</a></p>
-        <p><a ui-sref="weapons">Weapons</a></p>
-        <p><a ui-sref="armor">Armor</a></p>
-    </header>
-    
-    <div ui-view></div>
-</div>
+<html>
+<head> <link href="../sass/styles.css" type="text/css" rel="stylesheet" /> </head>
+
+    <body> 
+        <div class="root">
+        <header>
+            <p id="linkbullet"><a ui-sref="champions">Champions</a></p>
+            <p id="linkbullet"><a ui-sref="weapons">Weapons</a></p>
+            <p id="linkbullet"><a ui-sref="armor">Armor</a></p>
+        </header>
+            <div ui-view></div>
+        </div>
+</body>
+</html>

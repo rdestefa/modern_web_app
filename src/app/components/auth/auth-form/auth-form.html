@@ -1,5 +1,10 @@
+<html>
+<head>
+    <link href="../../sass/styles.css" type="text/css" rel="stylesheet" />  
+</head>
+
 <form name="authForm" novalidate ng-submit="$ctrl.submitForm();">
-    <label>
+    <label id="loginfield">
         <input
             type="email"
             name="email"
@@ -7,7 +12,7 @@
             placeholder="Email"
             ng-model="$ctrl.user.email">
     </label>
-    <label>
+    <label id="loginfield">
         <input
             type="username"
             name="username"
@@ -15,7 +20,7 @@
             placeholder="Username"
             ng-model="$ctrl.user.username">
     </label>
-    <label>
+    <label id="loginfield">
         <input
             type="password"
             name="password"
@@ -25,7 +30,7 @@
     </label>
     <br />
     <div class="auth-submit">
-        <button type="submit" ng-disabled="authForm.$invalid">
+        <button type="submit" ng-disabled="authForm.$invalid" name="submitbutton" id="loginbutton">
             {{ $ctrl.button }}
         </button>
     </div>
@@ -34,3 +39,5 @@
         {{ $ctrl.message }}
     </div>
 </form>
+    
+</html>
