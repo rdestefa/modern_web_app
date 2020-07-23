@@ -1,11 +1,9 @@
-<head> <link href="../../../sass/styles.css" type="text/css" rel="stylesheet" /> </head>
-
 <div>
     <h1 id="headline_title">Armor List</h1>
     
     <form>
         <!-- Drop down using ng-repeat -->
-        <p><p id="category"> Armor: </p>
+        <p><p id="category"> Armor: </p>     
             <label id="selector">
                 <select>
                     <option ng-repeat="armor in $ctrl.armor track by $index" value="$ctrl.armorSelected = $index">{{armor.name}}</option>
@@ -14,12 +12,12 @@
         </p>
      
         <!-- Display stats -->
-        <p id="inputbox">Health: <input id="health_field" type="number" ng-model=$ctrl.armor[$ctrl.armorSelected].health /></p>
-        <p id="inputbox">Health Regen: <input id="health_regen_field" type="number" ng-model=$ctrl.armor[$ctrl.armorSelected].healthRegen /></p>
-        <p id="inputbox">Armor: <input id="armor_field" type="number" ng-model=$ctrl.armor[$ctrl.armorSelected].armor /></p>
-        <p id="inputbox">Magic Resist: <input id="magic_resist_field" type="number" ng-model=$ctrl.armor[$ctrl.armorSelected].magicResist /></p>
-        <p id="inputbox">Attack Damage: <input id="attack_damage_field" type="number" ng-model=$ctrl.armor[$ctrl.armorSelected].attackDamage /></p>
-        <p id="inputbox">Attack Speed: <input id="attack_speed_field" type="number" ng-model=$ctrl.armor[$ctrl.armorSelected].attackSpeed /></p>
+        <p id="inputboxtop">Health: <input id="health_field" class="statistic" type="number" ng-model=$ctrl.armor[$ctrl.armorSelected].health /></p>
+        <p id="inputbox">Health Regen: <input class="statistic" id="health_regen_field" type="number" ng-model=$ctrl.armor[$ctrl.armorSelected].healthRegen /></p>
+        <p id="inputbox">Armor: <input class="statistic" id="armor_field" type="number" ng-model=$ctrl.armor[$ctrl.armorSelected].armor /></p>
+        <p id="inputbox">Magic Resist: <input id="magic_resist_field" class="statistic" type="number" ng-model=$ctrl.armor[$ctrl.armorSelected].magicResist /></p>
+        <p id="inputbox">Attack Damage: <input id="attack_damage_field" class="statistic" type="number" ng-model=$ctrl.armor[$ctrl.armorSelected].attackDamage /></p>
+        <p id="inputboxbottom">Attack Speed: <input id="attack_speed_field" class="statistic" type="number" ng-model=$ctrl.armor[$ctrl.armorSelected].attackSpeed /></p>
         
         <!-- Update data fields -->
         <button type="button" id="load_data" ng-click="$ctrl.loadData()">Load Data</button>

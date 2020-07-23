@@ -1,3 +1,9 @@
+@import url(http://fonts.googleapis.com/css2?family=Metal+Mania&family=Quicksand);
+
+/*.background {
+    background-image: linear-gradient(royalblue, cadetblue);
+}*/
+
 input {
     text-align: center;
     border: 1px solid #eee;
@@ -19,67 +25,186 @@ level_counter {
 
 /*pertains to each of "champions, weapons, armor fields under basic build simulator*/
 #linkbullet {
-  margin: auto;
-  text-align: center;
-  width: 50%;
-  border: 3px solid green;
-  padding: 10px;
+    margin: auto;
+    text-align: center;
+    vertical-align: top;
+    border: 3px solid ;
+    border-radius: 25px;
+    border-color: grey;
+    padding: 20px;
+    padding-top: 3px;
+    width: 250px;
+    height: 15px;
+    font-family: "Metal Mania", cursive;
+    font-size: 20pt;
+    background-image: linear-gradient(royalblue, cadetblue)
+}
+
+#linkbullet a {
+    text-decoration: none;
+    display: block;
+    color: gold;
 }
 
 /* pertains to "BASIC BUILD SIMULATOR" at the top of the login/reg screens*/
 #headline_title {
     margin: auto;
     text-align: center;
-    color: red;
+    color: gold;
+    font-family: Quicksand;
     font-weight: bold;
 }
 
-/* pertains to each of "email", "username", and "password" fields for the login*/
-#loginfield {
-  margin: auto;
-  align-content: center;
-  width: 50%;
-  border: 3px solid blue;
-  padding: 10px;  
+.auth_title {
+    margin: auto;
+    text-align: center;
+    color: gold;
+    font-family: Quicksand;
+    font-weight: bold;
+    padding: 10px 0px 20px 0px;
 }
 
-#loginbutton {
-  margin: auto;
-  align-content: center;
-  width: 50%;
-  border: 3px solid purple;
-  padding: 5px;  
+/* pertains to each of "email", "username", and "password" fields for the login*/
+.authsubmit {
+    margin: auto;
+    text-align: center;
+    vertical-align: top;
+    border: 3px solid ;
+    border-radius: 25px;
+    border-color: grey;
+    padding: 20px;
+    padding-top: 3px;
+    width: 250px;
+    height: 15px;
+    font-family: "Metal Mania", cursive;
+    font-size: 20pt;
+    background-image: linear-gradient(gold, darkgoldenrod)
+}
+
+#authsubmit {
+    margin: auto;
+    text-align: center;
+    font-family: "Metal Mania", cursive;
+    font-size: 20pt;
+    background-image: linear-gradient(gold, darkgoldenrod);
+    color: royalblue;
 }
 
 #logoutbutton {
-  margin: auto;
-  align-content: center;
-  width: 50%;
-  border: 3px solid purple;
-  padding: 5px;  
+    margin: auto;
+    text-align: center;
+    vertical-align: top;
+    border: 3px solid ;
+    border-radius: 25px;
+    border-color: grey;
+    padding: 20px;
+    padding-top: 3px;
+    width: 250px;
+    height: 15px;
+    font-family: "Metal Mania", cursive;
+    font-size: 20pt;
+    background-image: linear-gradient(gold, darkgoldenrod)
+}
+
+.logoutbutton {
+    margin: auto;
+    text-align: center;
+    font-family: "Metal Mania", cursive;
+    font-size: 20pt;
+    background-image: linear-gradient(gold, darkgoldenrod);
+    color: royalblue;
 }
 
 #inputbox {
-  margin: auto;
-  align-content: center;
-  width: 50%;
-  border: 3px solid black;
-  padding: 5px;  
+    margin: auto;
+    align-content: center;
+    width: 50%;
+    border: 3px solid black;
+    background-color: dimgrey;
+    padding: 5px;
+    font-family: Quicksand;
+}
+
+#authbox {
+    margin: auto;
+    align-content: center;
+    width: 175px;
+    border: 3px solid black;
+    background-color: dimgrey;
+    padding: 5px;
+    font-family: Quicksand;
+}
+
+#inputboxtop {
+    margin: auto;
+    align-content: center;
+    width: 50%;
+    border: 3px solid black;
+    background-color: dimgrey;
+    padding: 5px;
+    font-family: Quicksand;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#authboxtop {
+    margin: auto;
+    align-content: center;
+    width: 175px;
+    border: 3px solid black;
+    background-color: dimgrey;
+    padding: 5px;
+    font-family: Quicksand;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.statistic {
+    text-align: center;
+    float: right;
+}
+
+.auth {
+    align-content: center;
+}
+
+#inputboxbottom {
+    margin: auto;
+    align-content: center;
+    width: 50%;
+    border: 3px solid black;
+    background-color: dimgrey;
+    padding: 5px;
+    font-family: Quicksand;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+#authboxbottom {
+    margin: auto;
+    align-content: center;
+    width: 175px;
+    border: 3px solid black;
+    background-color: dimgrey;
+    padding: 5px;
+    font-family: Quicksand;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 #category {
-  display: inline;
-  margin: auto;
-  align-content: center;
-  width: 50%;
-  border: 3px solid orange;
-  padding: 5px;  
+    display: inline;
+    margin: auto;
+    align-content: center;
+    width: 50%;
+    border: 3px solid orange;
+    padding: 5px;  
 }
 
 #selector {
-  margin: auto;
-  align-content: center;
-  text-align: center;
-  color: yellow;
-  font-weight: bold;
+    margin: auto;
+    align-content: center;
+    text-align: center;
+    color: yellow;
+    font-weight: bold;
 }
