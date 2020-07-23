@@ -1,7 +1,9 @@
 angular
     .module('common', [
         'ui.router',
-        'ngParse'
+        'ngParse',
+        'ngMaterial',
+        'ngMessages'
     ])
     .config(function($locationProvider, ParseProvider) {
         var MY_PARSE_APP_ID = 'Sv6nNlAXW78dXVhpBcyHQjlBBMESfIOhazxLYVJA';

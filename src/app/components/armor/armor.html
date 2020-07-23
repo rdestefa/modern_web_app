@@ -1,6 +1,59 @@
 <div>
     <h1>Armor List</h1>
     
+    <md-content style="width:600px">
+        <md-tabs class="tabs" md-center-tabs style="width:600px">
+            <md-tab label="HP">
+                <md-content class="md-padding">
+                    <h2 class="health-display">Health</h2>
+                    <p class="health-body">
+                        The amount of health points your champion has determines how much damage you can receive before dying. The greater your health, the more hits you can take.
+                    </p>
+                </md-content>
+            </md-tab>
+            <md-tab label="HP Regen">
+                <md-content class="md-padding">
+                    <h2 class="health-regen-display">Health Regen</h2>
+                    <p class="health-regen-body">
+                        For each point of health regeneration, your champion will passively restore that much heaevery 5 seconds.
+                    </p>
+                </md-content>
+            </md-tab>
+            <md-tab label="Armor">
+                <md-content class="md-padding">
+                    <h2 class="armor-display">Armor</h2>
+                    <p class="armor-body">
+                        Armor enables your champion to take reduced damage from physical attacks. The higher your armor, the less physical damage you will take.
+                    </p>
+                </md-content>
+            </md-tab>
+            <md-tab label="MR">
+                <md-content class="md-padding">
+                    <h2 class="magic-resist-display">Magic Resist</h2>
+                    <p class="magic-resist-body">
+                        Magic resistance enables your champion to take reduced damage from special attacks such as spells. The higher your magic resistance, the less magical damage damage you will take.
+                    </p>
+                </md-content>
+            </md-tab>
+            <md-tab label="AD">
+                <md-content class="md-padding">
+                    <h2 class="attack-damage-display">Attack Damage</h2>
+                    <p class="attack-damage-body">
+                        Your champion's attack damage determines how much damage each physical attack will do to your opponent. Some spells that do physical damage also scale off of your attack damage.
+                    </p>
+                </md-content>
+            </md-tab>
+            <md-tab label="AS">
+                <md-content class="md-padding">
+                    <h2 class="attack-speed-display">Attack Speed</h2>
+                    <p class="attack-speed-body">
+                       The higher your attack speed, the faster your champion will attack his or her opponents. Attack speed reaches a cap at 2.5 attacks per second.
+                    </p>
+                </md-content>
+            </md-tab>
+        </md-tabs>
+    </md-content>
+    
     <form>
         <!-- Drop down using ng-repeat -->
         <p>Armor: 

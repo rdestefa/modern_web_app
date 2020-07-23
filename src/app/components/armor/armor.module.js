@@ -1,4 +1,5 @@
 angular
     .module('components.armor', [
-        'ui.router'
+        'ui.router',
+        'ngMaterial'
     ]);

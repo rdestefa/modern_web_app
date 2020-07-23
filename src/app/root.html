@@ -1,9 +1,12 @@
-<div class="root">
-    <header>
-        <p><a ui-sref="champions">Champions</a></p>
-        <p><a ui-sref="weapons">Weapons</a></p>
-        <p><a ui-sref="armor">Armor</a></p>
-    </header>
-    
-    <div ui-view></div>
+<div class="root">    
+    <app-sidenav></app-sidenav>
+    <div hide show-gt-sm style="margin-left:275px" ui-view></div>
+    <div hide-gt-sm style="margin-left:0px">
+        <header>
+            <p><a ui-sref="champions">Champions</a></p>
+            <p><a ui-sref="weapons">Weapons</a></p>
+            <p><a ui-sref="armor">Armor</a></p>
+        </header>
+        <div ui-view></div>
+    </div>
 </div>

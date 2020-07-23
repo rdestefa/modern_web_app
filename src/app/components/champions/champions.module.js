@@ -1,4 +1,5 @@
 angular
     .module('components.champions', [
-        'ui.router'
+        'ui.router',
+        'ngMaterial'
     ]);

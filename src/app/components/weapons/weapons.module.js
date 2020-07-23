@@ -1,4 +1,5 @@
 angular
     .module('components.weapons', [
-        'ui.router'
+        'ui.router',
+        'ngMaterial'
     ]);
