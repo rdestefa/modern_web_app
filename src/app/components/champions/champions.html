@@ -1,5 +1,5 @@
 <div>
-    <h1>Champions List</h1>
+    <h1 id="headline_title">Champions List</h1>
     
     <md-content style="width:600px">
         <md-tabs class="tabs" md-center-tabs style="width:600px">
@@ -56,55 +56,61 @@
     
     <form>
         <!-- Drop down using ng-repeat -->
-        <p>Champion: 
+        <div id="selectormenu">
+        <p><p id="category">Champion: </p> 
             <label>
                 <select id="champion">
                     <option ng-repeat="champion in $ctrl.champions track by $index" value="$ctrl.championSelected = $index">{{champion.name}}</option>
                 </select>
             </label>
         </p>
+        </div>
         
         <!-- Dynamic level counter -->
-        <p>Level:
-        <button type="button" ng-click="$ctrl.level = $ctrl.decrement();">-</button>
-        <input type="text" ng-model="$ctrl.level">
-        <button type="button" ng-click="$ctrl.level = $ctrl.increment();">+</button>
+        <p id="inputboxtop">Level:
+        <button type="button" class="statistic" ng-click="$ctrl.level = $ctrl.increment();">+</button>
+        <input type="text" class="statistic" ng-model="$ctrl.level">
+        <button type="button" class="statistic" ng-click="$ctrl.level = $ctrl.decrement();">-</button>
         </p>
     
         <!-- Display stats -->
-        <p>Health: <input id="health_field" type="number" ng-model=$ctrl.champions[$ctrl.championSelected].health /></p>
-        <p>Health Regen: <input id="health_regen_field" type="number" ng-model=$ctrl.champions[$ctrl.championSelected].healthRegen /></p>
-        <p>Armor: <input id="armor_field" type="number" ng-model=$ctrl.champions[$ctrl.championSelected].armor /></p>
-        <p>Magic Resist: <input id="magic_resist_field" type="number" ng-model=$ctrl.champions[$ctrl.championSelected].magicResist /></p>
-        <p>Attack Damage: <input id="attack_damage_field" type="number" ng-model=$ctrl.champions[$ctrl.championSelected].attackDamage /></p>
-        <p>Attack Speed: <input id="attack_speed_field" type="number" ng-model=$ctrl.champions[$ctrl.championSelected].attackSpeed /></p>
+        <p id="inputbox">Health: <input id="health_field" class="statistic" type="number" ng-model=$ctrl.champions[$ctrl.championSelected].health /></p>
+        <p id="inputbox">Health Regen: <input id="health_regen_field" class="statistic" type="number" ng-model=$ctrl.champions[$ctrl.championSelected].healthRegen /></p>
+        <p id="inputbox">Armor: <input id="armor_field" class="statistic" type="number" ng-model=$ctrl.champions[$ctrl.championSelected].armor /></p>
+        <p id="inputbox">Magic Resist: <input id="magic_resist_field" class="statistic" type="number" ng-model=$ctrl.champions[$ctrl.championSelected].magicResist /></p>
+        <p id="inputbox">Attack Damage: <input id="attack_damage_field" class="statistic" type="number" ng-model=$ctrl.champions[$ctrl.championSelected].attackDamage /></p>
+        <p id="inputboxbottom">Attack Speed: <input id="attack_speed_field" class="statistic" type="number" ng-model=$ctrl.champions[$ctrl.championSelected].attackSpeed /></p>
         
         <!-- Refresh data -->
-        <button type="button" id="load_data" ng-click="$ctrl.loadData()">Load Data</button>
+        <div id="registerbox">
+            <button type="button" id="load_data" ng-click="$ctrl.loadData()">Load Data</button>
     
-        <!-- Save new data to Parse database -->
-        <button type="button" id="save_data" ng-click="$ctrl.saveData($ctrl.champions[$ctrl.championSelected]);">Save Data</button>
+            <!-- Save new data to Parse database -->
+            <button type="button" id="save_data" ng-click="$ctrl.saveData($ctrl.champions[$ctrl.championSelected]);">Save Data</button>
+        </div>
     </form>
     
     <br />
-    <h1>Create Your Own Champion</h1>
+    <h1 id="headline_title">Create Your Own Champion</h1>
     
     <!-- Template to create a new Parse Champion object -->
     <form>
-        <p>Name: <input id="new_name" type="text" /></p>
-        <p>Health: <input id="new_hp" type="number" /></p>
-        <p>Health Per Level: <input id="new_hp_lv" type="number" /></p>
-        <p>Health Regen: <input id="new_hp_regen" type="number" /></p>
-        <p>Health Regen Per Level: <input id="new_hp_regen_lv" type="number" /></p>
-        <p>Armor: <input id="new_armor" type="number" /></p>
-        <p>Armor Per Level: <input id="new_armor_lv" type="number" /></p>
-        <p>Magic Resist: <input id="new_mr" type="number" /></p>
-        <p>Magic Resist Per Level: <input id="new_mr_lv" type="number" /></p>
-        <p>Attack Damage: <input id="new_ad" type="number" /></p>
-        <p>Attack Damage Per Level: <input id="new_ad_lv" type="number" /></p>
-        <p>Attack Speed: <input id="new_as" type="number" /></p>
-        <p>Attack Speed Per Level: <input id="new_as_lv" type="number" /></p>
+        <p id="inputboxtop">Name: <input id="new_name" class="statistic" type="text" /></p>
+        <p id="inputbox">Health: <input id="new_hp" class="statistic"  type="number" /></p>
+        <p id="inputbox">Health Per Level: <input id="new_hp_lv" class="statistic"  type="number" /></p>
+        <p id="inputbox">Health Regen: <input id="new_hp_regen" class="statistic"  type="number" /></p>
+        <p id="inputbox">Health Regen Per Level: <input id="new_hp_regen_lv" class="statistic" type="number" /></p>
+        <p id="inputbox">Armor: <input id="new_armor" class="statistic"  type="number" /></p>
+        <p id="inputbox">Armor Per Level: <input id="new_armor_lv" class="statistic"  type="number" /></p>
+        <p id="inputbox">Magic Resist: <input id="new_mr" class="statistic"  type="number" /></p>
+        <p id="inputbox">Magic Resist Per Level: <input id="new_mr_lv" class="statistic"  type="number" /></p>
+        <p id="inputbox">Attack Damage: <input id="new_ad" class="statistic"  type="number" /></p>
+        <p id="inputbox">Attack Damage Per Level: <input id="new_ad_lv" class="statistic"  type="number" /></p>
+        <p id="inputbox">Attack Speed: <input id="new_as" class="statistic"  type="number" /></p>
+        <p id="inputboxbottom">Attack Speed Per Level: <input id="new_as_lv" class="statistic"  type="number" /></p>
         
-        <button type="button" id="new_champion" ng-click="$ctrl.newChamp();">Create New Champion</button>
+        <div id="registerbox">
+            <button type="button" id="new_champion" ng-click="$ctrl.newChamp();">Create New Champion</button>
+        </div>
     </form>
 </div>

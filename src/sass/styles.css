@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css2?family=Metal+Mania&family=Quicksand);
+
 input {
     text-align: center;
     border: 1px solid #eee;
@@ -15,4 +17,229 @@ div {
 
 level_counter {
     height: 20px;
+}
+
+/*pertains to each of "champions, weapons, armor fields under basic build simulator*/
+#linkbullet {
+    margin: auto;
+    text-align: center;
+    vertical-align: top;
+    border: 3px solid ;
+    border-radius: 25px;
+    border-color: grey;
+    padding: 20px;
+    padding-top: 3px;
+    width: 250px;
+    height: 15px;
+    font-family: "Metal Mania", cursive;
+    font-size: 20pt;
+    background-image: linear-gradient(royalblue, cadetblue)
+}
+
+#linkbullet a {
+    text-decoration: none;
+    display: block;
+    color: gold;
+}
+
+/* pertains to "BASIC BUILD SIMULATOR" at the top of the login/reg screens*/
+#headline_title {
+    text-align: center;
+    color: gold;
+    font-family: Quicksand;
+    font-weight: bold;
+}
+
+.auth_title {
+    margin: auto;
+    text-align: center;
+    color: gold;
+    font-family: Quicksand;
+    font-weight: bold;
+    padding: 10px 0px 20px 0px;
+}
+
+/* pertains to each of "email", "username", and "password" fields for the login*/
+.auth-submit {
+    margin: auto;
+    text-align: center;
+    vertical-align: top;
+    border: 3px solid ;
+    border-radius: 25px;
+    border-color: grey;
+    padding: 20px;
+    padding-top: 3px;
+    width: 250px;
+    height: 15px;
+    font-family: "Metal Mania", cursive;
+    font-size: 20pt;
+    background-image: linear-gradient(gold, darkgoldenrod)
+}
+
+#authsubmit {
+    margin: auto;
+    text-align: center;
+    align-content: center;
+    font-family: "Metal Mania", cursive;
+    font-size: 20pt;
+    background-image: linear-gradient(gold, darkgoldenrod);
+    color: royalblue;
+}
+
+#logoutbutton {
+    margin: auto;
+    text-align: center;
+    vertical-align: top;
+    border: 3px solid ;
+    border-radius: 25px;
+    border-color: grey;
+    padding: 20px;
+    padding-top: 3px;
+    width: 250px;
+    height: 15px;
+    font-family: "Metal Mania", cursive;
+    font-size: 20pt;
+    background-image: linear-gradient(gold, darkgoldenrod)
+}
+
+.logoutbutton {
+    margin: auto;
+    text-align: center;
+    font-family: "Metal Mania", cursive;
+    font-size: 20pt;
+    background-image: linear-gradient(gold, darkgoldenrod);
+    color: royalblue;
+}
+
+#inputbox {
+    margin: auto;
+    align-content: center;
+    width: 50%;
+    border: 3px solid black;
+    background-color: dimgrey;
+    padding: 5px;
+    font-family: Quicksand;
+}
+
+#authbox {
+    margin: auto;
+    align-content: center;
+    width: 200px;
+    border: 3px solid black;
+    background-color: dimgrey;
+    padding: 5px;
+    font-family: Quicksand;
+}
+
+#inputboxtop {
+    margin: auto;
+    align-content: center;
+    width: 50%;
+    border: 3px solid black;
+    background-color: dimgrey;
+    padding: 5px;
+    font-family: Quicksand;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#authboxtop {
+    margin: auto;
+    align-content: center;
+    width: 200px;
+    border: 3px solid black;
+    background-color: dimgrey;
+    padding: 5px;
+    font-family: Quicksand;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.statistic {
+    text-align: center;
+    float: right;
+}
+
+.auth {
+    align-content: center;
+}
+
+#inputboxbottom {
+    margin: auto;
+    align-content: center;
+    width: 50%;
+    border: 3px solid black;
+    background-color: dimgrey;
+    padding: 5px;
+    font-family: Quicksand;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+#authboxbottom {
+    margin: auto;
+    align-content: center;
+    width: 200px;
+    border: 3px solid black;
+    background-color: dimgrey;
+    padding: 5px;
+    font-family: Quicksand;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+#category {
+    display: inline;
+    margin: auto;
+    align-content: center;
+    width: 50%;
+    border: 3px solid orange;
+    padding: 5px;  
+}
+
+#selector {
+    margin: auto;
+    align-content: center;
+    text-align: center;
+    color: yellow;
+    font-weight: bold;
+}
+
+#registerbox {
+    text-align: center;
+    align-content: center;
+    margin: auto;
+}
+
+#selectormenu{
+    text-align: center;
+    align-content: center;
+    margin: 1px 20px 20px 20px; 
+    padding: 1px 20px 20px 20px;
+    font-family: Quicksand;
+}
+
+#load_data, #new_champion{
+    background-image: linear-gradient(gold, darkgoldenrod);
+    color: royalblue;
+}
+#save_data{
+    background-image: linear-gradient(royalblue, cadetblue);
+    color: goldenrod;
+}
+
+#category{
+    color:goldenrod;
+    border-radius: 14px;
+    border-color: goldenrod;
+    display: inline;
+    width: 150px;
+    height: 10px;  
+}
+
+#selector{
+    color:goldenrod;
+    border-radius: 14px;
+    border-color: cadetblue;
+    display: inline; 
 }

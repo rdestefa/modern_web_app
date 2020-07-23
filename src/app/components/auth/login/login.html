@@ -1,13 +1,15 @@
 <div class="login">
-    <h1>Log In</h1>
-    <auth-form
+    <h1 class="auth_title">Welcome, please log in</h1>
+    <auth-form class="auth"
         user="$ctrl.user"
         message="{{ $ctrl.error }}"
         button="Login"
         on-submit="$ctrl.loginUser($event);">
     </auth-form>
     <br />
-    <a ui-sref="auth.register">
-        Don't have an account? Create one here.
-    </a>
+    <div id="registerbox">
+        <a ui-sref="auth.register" id="registerlink">
+            Don't have an account? Create one here.
+        </a>
+    </div>
 </div>

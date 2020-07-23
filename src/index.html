@@ -5,17 +5,21 @@
         <title>League of Legends App</title>
         <!-- Angular Material CSS now available via Google CDN; version 1.1.23 used here -->
         <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.23/angular-material.min.css">
-        <link id="bundlecss" rel="stylesheet" href="css/main-1595472868193.min.css">
+        <link id="bundlecss" rel="stylesheet" href="css/main-1595538237513.min.css">
     </head>
 
     <body>
-        <h1>Basic Build Simulator</h1>
+        <div class="background">
+            <h1 hide show-gt-sm id="headline_title" style="margin-left:275px" >League Build Simulator</h1>
+            <h1 hide-gt-sm id="headline_title" style="margin-left:0px">League Build Simulator</h1>
+            <!--<h1 id="headline_title">League Build Simulator</h1>-->
         
-        <root>
-            <span class="loader">Loading Page...</span>
-            <div ui-view></div>
-        </root>
-
+            <root>
+                <span class="loader">Loading Page...</span>
+                <div ui-view></div>
+            </root>
+        </div>
+            
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular.min.js"></script>
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular-animate.min.js"></script>
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular-aria.min.js"></script>
@@ -23,7 +27,7 @@
         
         <!-- Angular Material Javascript now available via Google CDN; version 1.1.23 used here -->
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.23/angular-material.min.js"></script>
-        <script id="bundle2" src="js/vendor-1595472867954.min.js"></script>
-        <script id="bundle" src="js/main-1595472868154.min.js"></script>
+        <script id="bundle2" src="js/vendor-1595538237258.min.js"></script>
+        <script id="bundle" src="js/main-1595538237477.min.js"></script>
     </body>
 </html>
