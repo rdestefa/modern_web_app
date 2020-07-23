@@ -3,12 +3,16 @@
     
     <form>
         <!-- Drop down using ng-repeat -->
-        <p><p id="category"> Armor: </p>     
-            <label id="selector">
+        <div id="selectormenu">
+        <p><p id="category"> Armor: </p>
+            <div id="selector">
+            <label>
                 <select>
                     <option ng-repeat="armor in $ctrl.armor track by $index" value="$ctrl.armorSelected = $index">{{armor.name}}</option>
                 </select>
             </label>
+            </div>
+        </div>
         </p>
      
         <!-- Display stats -->
@@ -20,9 +24,11 @@
         <p id="inputboxbottom">Attack Speed: <input id="attack_speed_field" class="statistic" type="number" ng-model=$ctrl.armor[$ctrl.armorSelected].attackSpeed /></p>
         
         <!-- Update data fields -->
+        <div id="registerbox">
         <button type="button" id="load_data" ng-click="$ctrl.loadData()">Load Data</button>
         
         <!-- Save new data to Parse database -->
         <button type="button" id="save_data" ng-click="$ctrl.saveData($ctrl.armor[$ctrl.armorSelected], document.getElementById('armor').value);">Save Data</button>
+    </div>
     </form>
 </div>

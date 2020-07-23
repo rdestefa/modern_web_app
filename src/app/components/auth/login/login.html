@@ -1,5 +1,5 @@
 <div class="login">
-    <h1 class="auth_title">Log In</h1>
+    <h1 class="auth_title">Welcome, please log in</h1>
     <auth-form class="auth"
         user="$ctrl.user"
         message="{{ $ctrl.error }}"
@@ -7,7 +7,9 @@
         on-submit="$ctrl.loginUser($event);">
     </auth-form>
     <br />
+    <div id="registerbox">
     <a ui-sref="auth.register" id="registerlink">
         Don't have an account? Create one here.
     </a>
+    </div>
 </div>
