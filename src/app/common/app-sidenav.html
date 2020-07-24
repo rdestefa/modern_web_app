@@ -8,10 +8,12 @@
             md-whiteframe="4"
             style="width:250px; height:100%;">
         
+            <!-- Heading for sidenav -->
             <md-toolbar>
                 <h1 style="text-align:center;">Pages</h1>
             </md-toolbar>
             
+            <!-- ui-sref buttons -->
             <md-content layout-padding>
                 <header>
                     <p style="text-align:center;">
@@ -30,6 +32,8 @@
                         </a>
                     </p>
                 </header>
+                
+                <!-- Button only shows up if sidenav is toggled -->
                 <md-button ng-click="$ctrl.closeLeft()" hide-gt-sm>
                     Close Side Nav
                 </md-button>

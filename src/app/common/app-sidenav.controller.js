@@ -15,6 +15,7 @@ function AppSidenavController($timeout, $mdSidenav) {
         };
     }
 
+    // Used to animate the left sidenav when it is toggled
     function buildDelayedToggler(navID) {
         return debounce(function() {
             $mdSidenav(navID)
@@ -25,6 +26,7 @@ function AppSidenavController($timeout, $mdSidenav) {
         }, 200);
     }
 
+    // Used to animate the right sidenav when it is toggled
     function buildToggler(navID) {
         return function() {
             $mdSidenav(navID)
@@ -37,6 +39,8 @@ function AppSidenavController($timeout, $mdSidenav) {
 
     ctrl.toggleLeft  = buildDelayedToggler('left')
     ctrl.toggleRight = buildToggler('right')
+    
+    // Checks to see if each sidenav is open
     ctrl.isOpenRight = function() {
         return $mdSidenav('right').isOpen();
     }
@@ -44,6 +48,7 @@ function AppSidenavController($timeout, $mdSidenav) {
         return $mdSidenav('left').isOpen();
     }
 
+    // Close the left sidenav
     ctrl.closeLeft = function() {
         $mdSidenav('left').close()
             .then(function() {
@@ -51,6 +56,7 @@ function AppSidenavController($timeout, $mdSidenav) {
             });
     };
 
+    // Close the right sidenav
     ctrl.closeRight = function() {
         $mdSidenav('right').close()
             .then(function() {
