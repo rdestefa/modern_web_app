@@ -20,3 +20,9 @@ During the time building this project, you'll need development dependencies of w
 To ensure that the Angular Material items work as intended, be sure that the following line of code is included in the `index.html` file located in the `src` folder:
 
  - `<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.23/angular-material.min.js"></script>`
+
+---
+
+## Running The App
+
+To run the app, simply navigate to the folder containing the files, then run `gulp` to build and start the app. After that, navigate to the port specified by `gulp`.
