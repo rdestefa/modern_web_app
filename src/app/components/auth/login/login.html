@@ -7,9 +7,11 @@
         on-submit="$ctrl.loginUser($event);">
     </auth-form>
     <br />
-    <div id="registerbox">
-        <a ui-sref="auth.register" id="registerlink">
-            Don't have an account? Create one here.
+    <div class="registerbox">
+        <a ui-sref="auth.register" class="registerlink">
+            <md-button md-no-ink class="md-primary">
+                Don't have an account? Create one here.
+            </md-button>
         </a>
     </div>
 </div>

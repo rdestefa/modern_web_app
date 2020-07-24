@@ -19,8 +19,12 @@ level_counter {
     height: 20px;
 }
 
+h2 {
+    text-align: center;
+}
+
 /*pertains to each of "champions, weapons, armor fields under basic build simulator*/
-#linkbullet {
+.linkbullet {
     margin: auto;
     text-align: center;
     vertical-align: top;
@@ -36,14 +40,19 @@ level_counter {
     background-image: linear-gradient(royalblue, cadetblue)
 }
 
-#linkbullet a {
+.linkbullet a {
     text-decoration: none;
     display: block;
     color: gold;
 }
 
+.tabbar {
+    width: 600px;
+    margin: auto;
+}
+
 /* pertains to "BASIC BUILD SIMULATOR" at the top of the login/reg screens*/
-#headline_title {
+.headlinetitle {
     text-align: center;
     color: gold;
     font-family: Quicksand;
@@ -86,7 +95,7 @@ level_counter {
     color: royalblue;
 }
 
-#logoutbutton {
+.logout-button {
     margin: auto;
     text-align: center;
     vertical-align: top;
@@ -111,7 +120,7 @@ level_counter {
     color: royalblue;
 }
 
-#inputbox {
+.inputbox {
     margin: auto;
     align-content: center;
     width: 50%;
@@ -131,7 +140,7 @@ level_counter {
     font-family: Quicksand;
 }
 
-#inputboxtop {
+.inputboxtop {
     margin: auto;
     align-content: center;
     width: 50%;
@@ -164,7 +173,7 @@ level_counter {
     align-content: center;
 }
 
-#inputboxbottom {
+.inputboxbottom {
     margin: auto;
     align-content: center;
     width: 50%;
@@ -188,7 +197,7 @@ level_counter {
     border-bottom-right-radius: 15px;
 }
 
-#category {
+.category {
     display: inline;
     margin: auto;
     align-content: center;
@@ -197,7 +206,7 @@ level_counter {
     padding: 5px;  
 }
 
-#selector {
+.selector {
     margin: auto;
     align-content: center;
     text-align: center;
@@ -205,27 +214,34 @@ level_counter {
     font-weight: bold;
 }
 
-#registerbox {
+.registerbox {
     text-align: center;
     align-content: center;
     margin: auto;
 }
 
-#selectormenu{
+.selectormenu{
     text-align: center;
     align-content: center;
-    margin: 1px 20px 20px 20px; 
-    padding: 1px 20px 20px 20px;
+    margin: 13px 20px 20px 20px; 
+    padding: 13px 20px 20px 20px;
     font-family: Quicksand;
 }
 
-#load_data, #new_champion{
+.load_data, .new_champion{
     background-image: linear-gradient(gold, darkgoldenrod);
     color: royalblue;
 }
-#save_data{
+.save_data{
     background-image: linear-gradient(royalblue, cadetblue);
     color: goldenrod;
+}
+
+.app-sidenav {
+    width: 250px; 
+    height: 100%;
+    position: fixed;
+    
 }
 
 #category{

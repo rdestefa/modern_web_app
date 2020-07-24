@@ -9,14 +9,26 @@
             style="width:250px; height:100%;">
         
             <md-toolbar>
-                <h1>Pages</h1>
+                <h1 style="text-align:center;">Pages</h1>
             </md-toolbar>
             
             <md-content layout-padding>
                 <header>
-                    <p><a ui-sref="champions">Champions</a></p>
-                    <p><a ui-sref="weapons">Weapons</a></p>
-                    <p><a ui-sref="armor">Armor</a></p>
+                    <p style="text-align:center;">
+                        <a ui-sref="champions">
+                            <md-button class="md-raised md-primary">Champions</md-button>
+                        </a>
+                    </p>
+                    <p style="text-align:center;">
+                        <a ui-sref="weapons">
+                            <md-button class="md-raised md-primary">Weapons</md-button>
+                        </a>
+                    </p>
+                    <p style="text-align:center;">
+                        <a ui-sref="armor">
+                            <md-button class="md-raised md-primary">Armor</md-button>
+                        </a>
+                    </p>
                 </header>
                 <md-button ng-click="$ctrl.closeLeft()" hide-gt-sm>
                     Close Side Nav

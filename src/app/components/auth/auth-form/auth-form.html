@@ -1,27 +1,33 @@
 <form name="authForm" novalidate ng-submit="$ctrl.submitForm();">
     <p id="authboxtop"><label>
-        <input
-            type="email"
-            name="email"
-            required="required"
-            placeholder="Email"
-            ng-model="$ctrl.user.email">
+        <md-input-container>
+            <label>Email</label>
+            <input
+                type="email"
+                name="email"
+                required="required"
+                ng-model="$ctrl.user.email">
+        </md-input-container>
     </label></p>
     <p id="authbox"><label>
-        <input
-            type="username"
-            name="username"
-            required="required"
-            placeholder="Username"
-            ng-model="$ctrl.user.username">
+        <md-input-container>
+            <label>Username</label>
+            <input
+                type="username"
+                name="username"
+                required="required"
+                ng-model="$ctrl.user.username">
+        </md-input-container>
     </label></p>
     <p id="authboxbottom"><label>
-        <input
-            type="password"
-            name="password"
-            required="required"
-            placeholder="Password"
-            ng-model="$ctrl.user.password">
+        <md-input-container>
+            <label>Password</label>
+            <input
+                type="password"
+                name="password"
+                required="required"
+                ng-model="$ctrl.user.password">
+        </md-input-container>
     </label></p>
     <br />
     <div class="auth-submit">
