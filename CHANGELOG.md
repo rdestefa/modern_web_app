@@ -1,3 +1,20 @@
+## [ 0.4.0 ] 
+
+v0.4 includes a robust testing funcionality, supplied by python selenium (ModernWebTest.py)
+
+### Bug Fixes
+
+- No bug fixes, many more html and css tags have been added to uniquely idenify elements on the page
+
+### Features
+
+- Testing for login, register, armor, and champions functionalities  
+- Please consult "Instructions.txt" or the ModernWebTestTutorial video for extensive instrutions on how to operate this
+
+Contributors
+Robert Koniuta
+
+
 ## [ 0.3.0 ] 
 
 v0.3 includes authentication for a user, and access control adjustments
