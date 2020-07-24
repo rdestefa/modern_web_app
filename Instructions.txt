@@ -1,0 +1,37 @@
+2020-07-24 
+Rob W. Koniuta
+
+Selenium Driven Unit Tests:
+
+Language: Python3
+Modules: selenium (pip install selenium), time (std lib), unittest (std lib)
+Files: ModernWebTest.py, secrets.py, various new id, name, and class tags added throughout the html pages
+Additional requirements: google chrome
+
+Setting and running (Windows machines, but extremely similar or the same for other OS):
+1) Install selenium on the command line (pip install selenium)
+2) Find your version of Google Chrome (85 if you are running the latest version)
+3) Install the appropriate chrome webdriver for selenium based on your chrome version from https://chromedriver.chromium.org/downloads. Save this executable in a directory of your choice, perhaps '/mnt/c/chromedrivers/chromedriver.exe'
+4) Currently, this program is configured to search for the chromedriver.exe executable in the '/mnt/c/chromedrivers/chromedriver.exe' path. If this is not the same path that you are using, you will need to change the ChromeDriverPath variable in the setUp method of class InputFormsCheck(unittest.TestCase)
+5) Run gulp on the project in a bash window, and note which localhost port that the server is running on
+6) If the server is not running on url 'http://localhost:8885/', locate the 'self.url' variable in the setUp method of class InputFormsCheck(unittest.TestCase) and modify its value appropriately
+7) In a second bash window, run 'python3 ModernWebTest.py' from the top level of the project
+
+Verifying correct correct functionality:
+1) A chrome window should pop up, with a banner message that indicates it is being controlled by selenium. 
+2) Tests will begin to run- the life cycle of a test is: 
+   1- Open a new chrome window
+   2- Interact with the page (writing to text fields, click buttons, etc) 
+   3- Check elements on the page and assert that they are equal to expected values
+   4- Return if the assert statments have passed for a given unit test
+   5- Close the chrome window
+3) There are four (4) unit tests, corresponding to each of test_champions(), test_armor(), test_login(), and test_register. This means that four windows will open and close throughout the running of this program
+4) A summary of passing and failing tests is written on the command line
+5) You might decide to check this program by changing one of the assertion statements such that it results in failure, or modifying other parts of the code which result in lost functionality for logging in or registering, for example
+
+Potentially useful information:
+*secrets.py stores 'secret' information, notably the login and registration emails, usernames, and passwords that will be used by the unit tests as it moves through testing functionality of the program. Because registration will only work for 'new' accounts that have not already been registered, if you wish to run 'python3 ModernWebTest.py' a second time, you will need to modify the reg_email, reg_password, and reg_username fields to new values or else the program will correctly record that the registration unit test has failed because a user was not able to be registered with the supplied values in secrets.py
+
+*there are a lot of moving pieces here that have the potential to cause issues, especially if you are not setting this up and running on windows. If you are encountering issues please email me at rkoniuta@nd.edu or consult the python selenium documentation https://selenium-python.readthedocs.io/installation.html. I will include a timestamped video that demonstrates correct functionality
+
+*you may see this error: [60976:31356:0724/032536.122:ERROR:device_event_log_impl.cc(208)] [03:25:36.122] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed. There are optional paramters within selenium for setting up bluetooth, however those are unnecessary for our project and I did not set them up
